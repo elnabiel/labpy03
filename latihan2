@@ -1,0 +1,14 @@
+#modal awal
+modal_awal = 100_000_000
+
+#laba keuntungan per bulan
+laba_perbulan = [0, 0, 0.01, 0.01, 0.05, 0.05, 0.05, 0.03]
+
+#total keuntungan
+keuntungan = 0
+
+for bulan, presentase in enumerate (laba_perbulan, start=1):
+    laba = modal_awal * presentase
+    keuntungan += laba
+    print(f"laba bulan ke-{bulan}: {laba:,.0f}")
+print(f"\nTotal keuntungan selama 8 bulan: {keuntungan:,.0f}")
