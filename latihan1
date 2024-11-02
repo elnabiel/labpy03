@@ -1,0 +1,10 @@
+## mengimport angka random
+from random import random
+
+n = int(input("MASUKAN BILANGAN :"))
+while n==n:
+    break
+for i in range(n):
+    a = random() * 0.5 #data akan menampilkan bilangan kurang dari 0.5
+    print(f"data ke-{i+1} => {a}") 
+print("selesai")
